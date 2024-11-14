@@ -7,6 +7,7 @@ This project is a web application that integrates with the Google Calendar API t
 - **User Authentication** with Google.
 - **Display Upcoming Events** from the user’s Google Calendar.
 - **Create New Events** with details like title, start time, and end time.
+- **Delete Events** .
 
 ## Technologies
 
