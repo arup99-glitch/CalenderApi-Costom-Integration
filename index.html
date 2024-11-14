@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Calendar Event Creator</title>
+    
+   
     <script src="https://apis.google.com/js/api.js"></script>
-    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+ <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="initClient()">
+<body onload="gapiLoaded()">
 
     <h2>Google Calendar Event Manager</h2>
 
   
 
     <!-- Login and Logout buttons -->
-    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <div id="success-message" style="display: none;"></div>
+    <div class="btn">
+      <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+    </div>
     <!-- Event Creation Form -->
-    <div id="event-form" style="display: none;">
+    <div id="event-form" class="eventForm" style="display: none;">
       <h3>Create Event</h3>
       <form id="create-event-form">
         <label>Event Title:</label><br>
@@ -39,11 +43,11 @@
 
     </div>
     <!-- Success Message -->
-<div id="success-message" style="display: none;"></div>
 
+    <div id="success-message" style="display: none;"></div>
     
     <!-- Event Display Section -->
-    <div id="events" style="display: none;">
+    <div id="events"  style="display: none;">
       <h3>Your Events</h3>
       <ul id="event-list"></ul>
     </div>

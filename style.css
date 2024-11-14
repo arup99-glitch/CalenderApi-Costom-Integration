@@ -1,4 +1,4 @@
-/* General page styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,9 +9,9 @@ body {
 h2 {
     text-align: center;
     margin-top: 30px;
-}
+} 
 
-/* Form and Input Styling */
+
 #event-form {
     width: 50%;
     margin: 0 auto;
@@ -42,8 +42,8 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Success Message Styling */
-#success-message {
+
+ #success-message {
     width: 50%;
     margin: 20px auto;
     padding: 10px;
@@ -80,4 +80,23 @@ button:hover {
 
 #event-list li button:hover {
     background-color: #e53935;
+} 
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
 }
+
+#signout_button{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
