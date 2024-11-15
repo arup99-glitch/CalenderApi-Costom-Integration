@@ -1,16 +1,14 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-bottom: 50px; /* Ensures space at the bottom for the footer */
     background-color: #f4f4f9;
 }
 
 h2 {
     text-align: center;
     margin-top: 30px;
-} 
-
+}
 
 #event-form {
     width: 50%;
@@ -42,8 +40,7 @@ button:hover {
     background-color: #45a049;
 }
 
-
- #success-message {
+#success-message {
     width: 50%;
     margin: 20px auto;
     padding: 10px;
@@ -58,6 +55,7 @@ button:hover {
 #events {
     margin-top: 20px;
     text-align: center;
+    padding-bottom: 30px; /* Adds extra space below the event list */
 }
 
 #event-list {
@@ -80,23 +78,37 @@ button:hover {
 
 #event-list li button:hover {
     background-color: #e53935;
-} 
+}
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     margin-left: 10px;
 }
 
-#signout_button{
+#signout_button {
     margin-left: 20px;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0; /* Positions the footer at the very bottom */
+    left: 50%; /* Centers the footer horizontally */
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    color: #333;
+    padding: 10px 0;
+    background-color: #f9f9f9; /* Optional: light background for visibility */
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow above */
+}
 
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
+.footer a:hover {
+    text-decoration: underline;
+}
